@@ -13,7 +13,7 @@ class CreateTeamsTable extends Migration
      */
     public function up()
     {
-        Schema::create('TeamsTableSeeder', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->increments('id');
 
             $table->string('title');
@@ -29,6 +29,6 @@ class CreateTeamsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('TeamsTableSeeder');
+        Schema::dropIfExists('teams');
     }
 }
